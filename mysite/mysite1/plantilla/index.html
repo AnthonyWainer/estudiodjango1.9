@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block titulo %}mi primera página en django{% endblock%}
+
+{% block estilos %}
+    <link rel="stylesheet" type="text/css"
+     href="/media/css/estilos.css">
+{% endblock%}
+    
+{% block contenido  %}
+
+    {% include "nav.html" %}
+    <h2>BIENVENIDOS A LA CLASE DE DJANGO</h2>
+    <p>¡hola! ¿cómo estas?</p>
+{% endblock  %}

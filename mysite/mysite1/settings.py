@@ -62,9 +62,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'es-es'
+LANGUAGE_CODE = 'es-mx'
 
-TIME_ZONE = 'GMT'
+TIME_ZONE = 'America/Lima'
 
 USE_I18N = True
 
@@ -76,5 +76,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__),'media/'))
+MEDIA_URL = '/media/'
 
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
+
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__),'plantilla'),
+)
