@@ -11,3 +11,9 @@ class formularioContacto(forms.ModelForm):
      self.fields['mensaje'].widget= forms.Textarea(attrs= {'class':'form-control','placeholder':'mensaje', 'id':'message','required':'',})
    class Meta:
         model= contacto
+
+class formularioLogin(forms.Form):
+    usuario  = forms.CharField(widget= forms.TextInput(attrs={'class':"form-control", 'placeholder':"Usuario", 'required':'', 'autofocus':''}))
+    password = forms.CharField(widget= forms.PasswordInput(attrs={'type':"password", 'id':"inputPassword", 'class':"form-control", 'placeholder':"Password", 'required':''}))
+    def clean(self):
+        return self.cleaned_data

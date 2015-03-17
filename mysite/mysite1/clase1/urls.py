@@ -6,7 +6,8 @@ urlpatterns = patterns('mysite1.clase1.views',
     url(r'^post/(\d+)$', post),
     url(r'^post2/(\d+)/(\d+)$', post1),
     url(r'^/$', index),
-    url(r'^contactenos/$', contactenos,name="contacto"),
+    #url(r'^contactenos/$', contactenos,name="contacto"),
     url(r'^acerca/$', acerca,name="acerca"),
+    url(r'login/$',login),
 
 )
