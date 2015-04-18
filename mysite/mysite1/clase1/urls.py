@@ -9,5 +9,7 @@ urlpatterns = patterns('mysite1.clase1.views',
     #url(r'^contactenos/$', contactenos,name="contacto"),
     url(r'^acerca/$', acerca,name="acerca"),
     url(r'login/$',login),
+    url(r'^uploads/', upload_file, name="uploads"),
+
 
 )

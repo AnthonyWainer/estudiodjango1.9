@@ -13,5 +13,9 @@ class accesos(models.Model):
 class contacto(models.Model):
     nombre   = models.CharField(max_length=50)
     email    = models.CharField(max_length=50)
-    telefono = models.IntegerField(max_length=11)
+    telefono = models.IntegerField()
     mensaje  = models.CharField(max_length=100)
+
+class Document(models.Model):
+    filename = models.CharField(max_length=100)
+    docfile = models.FileField(upload_to='documents/%Y/%m/%d')
