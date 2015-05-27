@@ -3,14 +3,14 @@ from .base import *
 DEBUG = True
 ALLOWED_HOSTS = []
 
-WSGI_APPLICATION = 'clase3.wsgi.application'
+WSGI_APPLICATION = 'clase4.wsgi.application'
 
 
 DATABASES = {
     'default': {
         'ENGINE'   : 'django.db.backends.postgresql_psycopg2',
-        'NAME'     : 'clase2',
-        'USER'     : 'postgres',
+        'NAME'     : 'clase4',
+        'USER'     : 'root',
         'PASSWORD' : '123',
         'HOST'     : 'localhost',
         'PORT'     : '5432',
