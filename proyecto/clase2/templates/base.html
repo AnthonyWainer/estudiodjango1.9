@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+     <h1>Mi sitio Web</h1>
+     <hr>
+    {% block content %}{% endblock %} 
+    {% block footer %} 
+        <hr> 
+        <p>Gracias por visitar nuestro sitio web.</p> 
+    {% endblock %} 
+</body>
+</html>
